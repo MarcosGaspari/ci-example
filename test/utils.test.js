@@ -7,6 +7,12 @@ describe('Utils', () => {
                 .toBe(-1);
         });
     });
+    describe('gerarNumeroAleatorio', () => {
+        test('fim nao pode ser negativo', () => {
+            expect(gerarNumeroAleatorio(2, 3))
+                .toBe(5);
+        });
+    });
 
     describe('acharCaracter', () => {
         test('comprimento invalido', () => {
